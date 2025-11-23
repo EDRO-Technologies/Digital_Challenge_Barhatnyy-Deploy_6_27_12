@@ -1,0 +1,15 @@
+/* src/components/participants/Participants.css */
+
+/* Специфика карточки участника */
+.participant-card .email,
+.participant-card .telegram {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.table-row-hover:hover {
+    background-color: rgba(59, 130, 246, 0.05) !important;
+}

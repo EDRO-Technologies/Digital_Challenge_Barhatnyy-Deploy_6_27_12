@@ -1,0 +1,71 @@
+/* src/components/Dashboard.css */
+
+.app-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--bg-body);
+}
+
+/* --- Навигационная панель --- */
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0; /* Не сжиматься */
+}
+
+.nav-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-body);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--text-main);
+    background: #2a3139;
+}
+
+.nav-link.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* --- Основной контент --- */
+.dashboard-content {
+    flex: 1; /* Занимает все доступное место */
+    overflow-y: auto; /* Позволяет скроллить контент */
+    padding: 24px;
+}
